@@ -5,7 +5,7 @@ def configMap = [
     component = "payment"
 ]
 
-if( ! env.BRANCH_NAME.equalsIngnoreCase('main') ){
+if( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){
     pythonEKSPipeline(configMap)
 }
 else{
